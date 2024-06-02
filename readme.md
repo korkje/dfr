@@ -1,9 +1,9 @@
-# dfr
+# dfr [![JSR](https://jsr.io/badges/@korkje/dfr)](https://jsr.io/@korkje/dfr)
 
-Creates a promise and extracts its resolve and reject functions.
+Creates a promise and returns it along with resolve and reject functions.
 
 ```ts
-import dfr from "https://deno.land/x/dfr/mod.ts";
+import dfr from "jsr:@korkje/dfr";
 
 const { promise, resolve, reject } = dfr<string>();
 

@@ -1,4 +1,11 @@
-export const dfr = <Value = void, Error = void>() => {
+/**
+ * Creates a promise and returns it along with resolve and reject functions.
+ */
+export const dfr = <Value = void, Error = void>(): {
+    promise: Promise<Value>;
+    resolve: (value: Value) => void;
+    reject: (error: Error) => void;
+} => {
     let resolve!: (value: Value) => void;
     let reject!: (error: Error) => void;
 

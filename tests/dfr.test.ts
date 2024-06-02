@@ -1,4 +1,4 @@
-import { assert } from "./deps.ts";
+import { assert } from "@std/assert";
 import dfr from "../lib/dfr.ts";
 
 Deno.test("dfr", async () => {
